@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script defer src="./script/script.js"></script>
+    <link rel="stylesheet" href="./styles/styles.css">
+    <title>Mein erstes Tamagotchi</title>
+</head>
+
+<body>
+    <header>
+        <h1>Mein erstes Tamagotchi</h1>
+    </header>
+    <main>
+        <div class="name-container" id="name-container">
+            <h2>Gib deinem Tamagotchi einen Namen:</h2>
+            <input type="text" id="pet-name-input" placeholder="z. B. Fluffy">
+            <div class="avatar-container">
+                <h2>Wähle einen Avatar:</h2>
+                <div class="avatars">
+                    <img src="./images/avatar1.png" alt="Avatar 1" class="avatar" data-avatar="1">
+                    <img src="./images/avatar2.png" alt="Avatar 2" class="avatar" data-avatar="2">
+                    <img src="./images/avatar3.png" alt="Avatar 3" class="avatar" data-avatar="3">
+                </div>
+            </div>
+            <button id="set-name">Bestätigen</button>
+        </div>
+
+
+        <div id="status-area" class="hidden">
+            <h2 id="display-name"></h2>
+            <img id="display-avatar" src="" alt="Avatar des Tamagotchi" style="max-width: 350px;">
+            <div class="status-container">
+                <h2>Status</h2>
+                <div class="status-item">
+                    <span>Hunger:</span>
+                    <div class="progress-bar">
+                        <div id="hunger-bar" class="progress" style="width: 50%;"></div>
+                    </div>
+                </div>
+                <div class="status-item">
+                    <span>Energie:</span>
+                    <div class="progress-bar">
+                        <div id="energy-bar" class="progress" style="width: 80%;"></div>
+                    </div>
+                </div>
+                <div class="status-item">
+                    <span>Laune:</span>
+                    <div class="progress-bar">
+                        <div id="mood-bar" class="progress" style="width: 60%;"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2024 by <a href="https://www.techstarter.de/">Techstarter</a></p>
+    </footer>
+</body>
+
+</html>
