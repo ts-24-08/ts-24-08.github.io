@@ -9,12 +9,17 @@ const statusArea = document.getElementById("status-area");
 const hungerBar = document.getElementById("hunger-bar");
 const energyBar = document.getElementById("energy-bar");
 const moodBar = document.getElementById("mood-bar");
+// Action-Buttons
+const feedButton = document.getElementById("feed-button");
+const playButton = document.getElementById("play-button");
+const sleepButton = document.getElementById("sleep-button");
+const exitButton = document.getElementById("exit-button");
 
 let petName = "";
 let petAvatar = "";
 
 let hunger = 50;
-let energy = 80;
+let energy = 20;
 let mood = 60;
 
 setNameButton.addEventListener("click", () => {
@@ -62,6 +67,11 @@ function updateStatusBars() {
         alert(`${petName} ist traurig und möchte nicht mehr spielen.`);
         stopGame();
     }
+    
+    if (energy <= 0) {
+        alert(`${petName} ist vor Müdigkeit gestorben.`);
+        stopGame();
+    }
 }
 
 function startStatusUpdate() {
@@ -70,8 +80,33 @@ function startStatusUpdate() {
         mood = Math.max(0, mood - 5);
         energy = Math.max(0, energy - 3);
         updateStatusBars();
-    }, 5000);
+    }, 500);
 }
+
+playButton.addEventListener('click', (event) => {
+    console.log('playbutton.clicked', event);
+    mood = mood + 5;
+    energy = energy -1;
+    hunger = hunger +3;
+})
+
+feedButton.addEventListener('click', (event) => {
+    console.log('feedbutton.clicked', event);
+    mood = mood + 5;
+    energy = energy +5;
+    hunger = hunger -10;
+})
+
+sleepButton.addEventListener('click', (event) => {
+    console.log('sleepbutton.clicked', event);
+    mood = mood + 5;
+    energy = energy +5;
+    hunger = hunger +1;
+})
+
+exitButton.addEventListener('click', () => {
+    window.location.href = "https://www.google.de";
+} )
 
 function stopGame() {
     clearInterval(startStatusUpdate);
