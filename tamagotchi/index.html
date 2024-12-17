@@ -43,7 +43,7 @@
                 <div class="status-item">
                     <span>Energie:</span>
                     <div class="progress-bar">
-                        <div id="energy-bar" class="progress" style="width: 80%;"></div>
+                        <div id="energy-bar" class="progress" style="width: 20%;"></div>
                     </div>
                 </div>
                 <div class="status-item">
@@ -53,11 +53,24 @@
                     </div>
                 </div>
             </div>
+            <div class="action-buttons">
+                <button id="feed-button">Füttern</button>
+                <button id="play-button">Spielen</button>
+                <button id="sleep-button">Schlafen</button>
+            </div>
         </div>
     </main>
     <footer>
         <p>&copy; 2024 by <a href="https://www.techstarter.de/">Techstarter</a></p>
     </footer>
+    <div class="overlay-wrapper">
+    <div class="overlay">
+        <h1>Game-Over</h1>
+        <span id="death-reason"></span>
+        <button id="play-again-button">Play again</button>
+        <button id="exit-button">Exit</button>
+    </div>
+</div>
 </body>
 
 </html>
