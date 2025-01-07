@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <script src="./src/script.js" type="module"></script>
+    <script src="./src/script.js" type="module" defer></script>
     <link rel="stylesheet" href="./src/input.css">
 
 
@@ -13,37 +13,37 @@
 
 <body>
     <header>
-        <nav>
+        <nav class="flex justify-between my-4">
             <h3 class="text-xl">Name</h3>
-            <div>
-                <ul>
-                    <li><a href="#">blog</a></li>
-                    <li><a href="#">projects</a></li>
-                    <li><a href="#">about</a></li>
-                    <li><a href="#">newsletter</a></li>
+            <div class="flex">
+                <ul class="flex">
+                    <li class="mx-3"><a href="#">blog</a></li>
+                    <li class="mx-3"><a href="#">projects</a></li>
+                    <li class="mx-3"><a href="#">about</a></li>
+                    <li class="mx-3"><a href="#">newsletter</a></li>
                 </ul>
                 <button>Light / Dark</button>
             </div>
         </nav>
         <hr>
-        <h3>DEV BLOG</h3>
+        <h3 class="text-7xl text-center my-5">DEV BLOG</h3>
         <hr>
 
     </header>
     <main>
-        <h3>recent blog posts</h3>
-        <section>
-            <article>
+        <h3 class="text-2xl font-semibold my-4">recent blog posts</h3>
+        <section id="recent-blog-posts">
+            <article class="border w-[391px]">
                 <a href="">
 
-                    <img src="" alt="">
-                    <p>Olivia Rhye - 1. Januar 2024</p>
-                    <h1>UX review presentation</h1>
+                    <img src="dev-blog-1.jpg" alt="">
+                    <p class="text-sm text-[#6941C6] font-semibold">Olivia Rhye - 1. Januar 2024</p>
+                    <h1 class="text-xl font-bold my-4">UX review presentation</h1>
                     <p>Today I gave a presentation on the UX review I did for the company's website. I was nervous at first, but it went well. I got some good feedback and I'm excited to start working on the changes. I'll be posting updates on my progress, so stay tuned!</p>
-                    <ul>
-                        <li><span>Design</span></li>
-                        <li><span>Research</span></li>
-                        <li><span>Presentation</span></li>
+                    <ul class="flex">
+                        <li><span class="bg-[#F9F5FF] text-[#6941C6] px-2 py-1 rounded-md mr-2">Design</span></li>
+                        <li><span class="bg-[#EEF4FF] text-[#3538CD] px-2 py-1 rounded-md mr-2">Research</span></li>
+                        <li><span class="bg-[#FDF2FA] text-[#C11574] px-2 py-1 rounded-md mr-2">Presentation</span></li>
                     </ul>
                 </a>
             </article>
