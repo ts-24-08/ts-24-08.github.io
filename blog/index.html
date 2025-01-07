@@ -12,38 +12,36 @@
 </head>
 
 <body>
-    <header>
-        <nav>
+    <header class="my-3">
+        <nav class="flex justify-between my-3">
             <h3 class="text-xl">Name</h3>
-            <div>
-                <ul>
-                    <li><a href="#">blog</a></li>
-                    <li><a href="#">projects</a></li>
-                    <li><a href="#">about</a></li>
-                    <li><a href="#">newsletter</a></li>
+            <div class="flex justify-between">
+                <ul class="flex justify-between mx-2">
+                    <li class="mx-2"><a href="#">blog</a></li>
+                    <li class="mx-2"><a href="#">projects</a></li>
+                    <li class="mx-2"><a href="#">about</a></li>
+                    <li class="mx-2"><a href="#">newsletter</a></li>
                 </ul>
-                <button>Light / Dark</button>
+                <button class="mx-2">Light / Dark</button>
             </div>
         </nav>
-        <hr>
-        <h3>DEV BLOG</h3>
-        <hr>
+        <h3 class="flex justify-center leading-[105px] text-7xl my-2 border-t-2 border-b-2">DEV BLOG</h3>
 
     </header>
     <main>
-        <h3>recent blog posts</h3>
+        <h3 class="text-lg font-bold mb-6">Recent blog posts</h3>
         <section>
-            <article>
+            <article class="border-4 border-indigo-500/75 rounded-md w-[390px]">
                 <a href="">
 
-                    <img src="" alt="">
-                    <p>Olivia Rhye - 1. Januar 2024</p>
-                    <h1>UX review presentation</h1>
-                    <p>Today I gave a presentation on the UX review I did for the company's website. I was nervous at first, but it went well. I got some good feedback and I'm excited to start working on the changes. I'll be posting updates on my progress, so stay tuned!</p>
-                    <ul>
-                        <li><span>Design</span></li>
-                        <li><span>Research</span></li>
-                        <li><span>Presentation</span></li>
+                    <img src="./src/Media/dev-blog-1.jpg" alt="Office Picture">
+                    <p class="text-[#6941C6] ml-8">Olivia Rhye - 1. Januar 2024</p>
+                    <h1 class="text-2xl font-semibold ml-4">UX review presentation</h1>
+                    <p class="ml-4">Today I gave a presentation on the UX review I did for the company's website. I was nervous at first, but it went well. I got some good feedback and I'm excited to start working on the changes. I'll be posting updates on my progress, so stay tuned!</p>
+                    <ul class="flex justify-start ml-4">
+                        <li class="mx-1 text-indigo-600 bg-indigo-300 rounded-xl"><span>Design</span></li>
+                        <li class="mx-1 text-blue-600 bg-blue-300 rounded-xl"><span>Research</span></li>
+                        <li class="mx-1 text-red-500 bg-red-300 rounded-xl"><span>Presentation</span></li>
                     </ul>
                 </a>
             </article>
