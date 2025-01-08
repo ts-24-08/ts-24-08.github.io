@@ -11,7 +11,7 @@
 
 </head>
 
-<body>
+<body class="container mx-auto">
     <header>
         <nav class="flex justify-between my-4">
             <h3 class="text-xl">Name</h3>
@@ -31,20 +31,38 @@
 
     </header>
     <main>
-        <h3 class="text-2xl font-semibold my-4">recent blog posts</h3>
-        <section id="recent-blog-posts">
+        <h3 class="text-2xl font-semibold my-4 text-center md:text-left">recent blog posts</h3>
+        <section id="recent-blog-posts" class="flex flex-col items-center md:items-start lg:grid lg:grid-cols-2 lg:grid-rows-3">
             <article class="border w-[391px]">
-                <a href="">
+                <a href="" class="flex flex-col">
 
                     <img src="dev-blog-1.jpg" alt="">
-                    <p class="text-sm text-[#6941C6] font-semibold">Olivia Rhye - 1. Januar 2024</p>
-                    <h1 class="text-xl font-bold my-4">UX review presentation</h1>
-                    <p>Today I gave a presentation on the UX review I did for the company's website. I was nervous at first, but it went well. I got some good feedback and I'm excited to start working on the changes. I'll be posting updates on my progress, so stay tuned!</p>
-                    <ul class="flex">
-                        <li><span class="bg-[#F9F5FF] text-[#6941C6] px-2 py-1 rounded-md mr-2">Design</span></li>
-                        <li><span class="bg-[#EEF4FF] text-[#3538CD] px-2 py-1 rounded-md mr-2">Research</span></li>
-                        <li><span class="bg-[#FDF2FA] text-[#C11574] px-2 py-1 rounded-md mr-2">Presentation</span></li>
-                    </ul>
+                    <div>
+                        <p class="text-sm text-[#6941C6] font-semibold">Olivia Rhye - 1. Januar 2024</p>
+                        <h1 class="text-xl font-bold my-4">UX review presentation</h1>
+                        <p>Today I gave a presentation on the UX review I did for the company's website. I was nervous at first, but it went well. I got some good feedback and I'm excited to start working on the changes. I'll be posting updates on my progress, so stay tuned!</p>
+                        <ul class="flex">
+                            <li><span class="bg-[#F9F5FF] text-[#6941C6] px-2 py-1 rounded-md mr-2">Design</span></li>
+                            <li><span class="bg-[#EEF4FF] text-[#3538CD] px-2 py-1 rounded-md mr-2">Research</span></li>
+                            <li><span class="bg-[#FDF2FA] text-[#C11574] px-2 py-1 rounded-md mr-2">Presentation</span></li>
+                        </ul>
+                    </div>
+                </a>
+            </article>
+            <article class="border w-[391px]">
+                <a href="" class="flex flex-row">
+
+                    <img src="dev-blog-1.jpg" alt="">
+                    <div>
+                        <p class="text-sm text-[#6941C6] font-semibold">Olivia Rhye - 1. Januar 2024</p>
+                        <h1 class="text-xl font-bold my-4">UX review presentation</h1>
+                        <p>Today I gave a presentation on the UX review I did for the company's website. I was nervous at first, but it went well. I got some good feedback and I'm excited to start working on the changes. I'll be posting updates on my progress, so stay tuned!</p>
+                        <ul class="flex">
+                            <li><span class="bg-[#F9F5FF] text-[#6941C6] px-2 py-1 rounded-md mr-2">Design</span></li>
+                            <li><span class="bg-[#EEF4FF] text-[#3538CD] px-2 py-1 rounded-md mr-2">Research</span></li>
+                            <li><span class="bg-[#FDF2FA] text-[#C11574] px-2 py-1 rounded-md mr-2">Presentation</span></li>
+                        </ul>
+                    </div>
                 </a>
             </article>
         </section>

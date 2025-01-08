@@ -26,6 +26,15 @@ const articles = [
     teaser: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
     tags: ["work", "remote", "benefits"],
   },
+  {
+    id: 4,
+    title: "The benefits of remote work",
+    img: "dev-blog-3.jpg",
+    date: "2021-07-03",
+    author: "John Doe",
+    teaser: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    tags: ["work", "remote", "benefits"],
+  },
 ];
 
 const authors = [
